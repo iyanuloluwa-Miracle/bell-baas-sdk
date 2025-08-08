@@ -18,3 +18,18 @@ export interface ClientOptions {
 }
 
 // Add more utility types as needed
+
+// --- Token Generation Types ---
+// Headers for token generation (used in /v1/generate-token)
+export interface GenerateTokenHeaders {
+  consumerKey: string;
+  consumerSecret: string;
+  validityTime: number; // in seconds or ms, as per API
+}
+
+// Response for token generation
+export interface GenerateTokenResponse {
+  success: boolean;
+  message: string;
+  token: string;
+}
