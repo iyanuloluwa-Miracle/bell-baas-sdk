@@ -1,9 +1,16 @@
 // BellBaasClient: Main API client for Bell SDK
 import axios, { AxiosInstance, AxiosError } from 'axios';
 import crypto from 'crypto';
-import type { GenerateTokenHeaders, GenerateTokenResponse, ClientOptions, ApiResponse } from '../types/common';
-import type { CreateIndividualPayload } from '../types/user';
-import type { TransferPayload, NameEnquiryPayload, RequeryPayload, TransactionsQuery } from '../types/transaction';
+
+import type {
+  TransferPayload,
+  NameEnquiryPayload,
+  RequeryPayload,
+  TransactionsQuery,
+  CreateIndividualPayload,
+  ApiResponse,
+  ClientOptions
+} from '../types/api-types';
 // BellBaasClient: Main API client for Bell SDK
 
 export class BellBaasClient {
