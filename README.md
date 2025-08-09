@@ -96,6 +96,45 @@ const isValid = client.verifyWebhookSignature(
 );
 ```
 
+## How it Works
+
+The Bell SDK is a TypeScript/JavaScript library that wraps the Bell BAAS API, providing a simple and consistent interface for developers. It handles authentication, request formatting, and response parsing, so you can focus on your application logic.
+
+- **Client Initialization:** Configure the SDK with your API key, base URL, and optional webhook secret.
+- **API Methods:** Use the client methods to interact with virtual accounts, transfers, transactions, and more. All methods return typed responses and throw errors for failed requests.
+- **Types:** All request and response types are exported for type safety and autocompletion.
+- **Webhook Verification:** Securely verify incoming webhook requests using the provided utility.
+
+The SDK is organized as follows:
+- `src/client/client.ts`: Main client implementation
+- `src/types/`: Type definitions for API requests and responses
+- `tests/`: Integration tests for SDK features
+
+## Contributing
+
+We welcome contributions! To get started:
+
+1. **Fork the repository** and clone your fork.
+2. **Install dependencies:**
+  ```sh
+  npm install
+  ```
+3. **Run tests:**
+  ```sh
+  npm test
+  ```
+4. **Make your changes** in a new branch.
+5. **Add or update tests** as needed.
+6. **Ensure all tests pass** before submitting a pull request.
+7. **Open a pull request** with a clear description of your changes.
+
+### Development
+- Source code is in `src/`
+- Tests are in `tests/`
+- Use `npm run build` to compile TypeScript (if applicable)
+
+Please follow the existing code style and conventions. For major changes, open an issue first to discuss your proposal.
+
 ## Types
 All request/response and entity types are exported from `src/types/api-types.ts`.
 
