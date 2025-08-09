@@ -1,3 +1,5 @@
+
+![Bell SDK Banner](./images/BellBank.png)
 # Bell SDK
 
 A TypeScript/JavaScript SDK for interacting with the Bell BAAS API, providing easy access to virtual accounts, transfers, transactions, and more.
