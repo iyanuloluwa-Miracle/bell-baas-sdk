@@ -1,3 +1,4 @@
+# ⚠️ This SDK is currently under review and updates are still being added. Please check back regularly for the latest changes.
 
 ![Bell SDK Banner](./images/BellBank.png)
 # Bell SDK
